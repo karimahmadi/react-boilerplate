@@ -24,6 +24,7 @@ import Footer from 'components/Footer';
 import Form from 'containers/Form';
 
 import GlobalStyle from '../../global-styles';
+import User from '../User';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -55,6 +56,7 @@ export default function App() {
               <Route exact path="/" component={HomePage} />
               <Route path="/features" component={FeaturePage} />
               <Route path="/form" component={Form} />
+              <Route path="/user" component={User} />
               <Route path="" component={NotFoundPage} />
             </Switch>
             <Footer />
